@@ -1,0 +1,17 @@
+<div>
+    <table id="users">
+        <tr>
+            <th class="h1">Name</th>
+            <th class="h2">Email</th>
+            <th class="h3">Age</th>
+            <th class="h4">Package</th>
+            <th class="h5">Address</th>
+            <th class="h6">Pincode</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td *ngFor="let col of index">
+                {{user[col]}}
+            </td>
+        </tr>
+    </table>
+</div>
